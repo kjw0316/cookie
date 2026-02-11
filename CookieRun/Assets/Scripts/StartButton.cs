@@ -1,11 +1,7 @@
-using UnityEditor;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour
+public class StartButton : MonoBehaviour
 {
-    public float move = 1.0f;
-    public float speed = 10.0f;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +11,6 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float force = - move * speed * Time.deltaTime;
-        transform.Translate(force, 0, 0);
+        
     }
 }

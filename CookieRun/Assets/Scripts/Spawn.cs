@@ -3,6 +3,7 @@ using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 public class Spawn : MonoBehaviour
 {
     public GameObject[] Obstacle;
@@ -26,8 +27,8 @@ public class Spawn : MonoBehaviour
         if (timer > waitingTime)
         {
             number = Random.Range(0, Obstacle.Length);
-            Instantiate(Obstacle[number], transform.position, transform.rotation);
             timer = 0;
+            Destroy(Instantiate(Obstacle[number], transform.position, transform.rotation), 5f);
         }
     }
 }

@@ -1,9 +1,9 @@
 using UnityEngine;
 using TMPro;
 
-public class Blood : Obstacle
+public class Blood : Player
 {
-    public TextMeshProUGUI bloodText;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,6 +13,6 @@ public class Blood : Obstacle
     // Update is called once per frame
     void Update()
     {
-        bloodText.text = "Blood : " + blood;
+        
     }
 }
